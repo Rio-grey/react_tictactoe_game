@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  overflow: hidden;
+  background-color: #141523;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.game-cell.is_x {
+  color: transparent;
+  background-image: linear-gradient(120deg, #5433ff, #20bdff, #a5fecb);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: auto;
+  box-shadow: rgba(36, 36, 116, 0.2) 0px 7px 29px 0px;
+}
+.game-cell.is_o {
+  box-shadow: rgba(116, 79, 36, 0.2) 0px 7px 29px 0px;
+  color: transparent;
+  background-image: linear-gradient(120deg, #f12711, #f5af19);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: auto;
+}
+.title {
+  color: transparent;
+  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: auto;
+}
+.winner {
+  color: transparent;
+  background-image: linear-gradient(120deg, #ec008c, #fc6767, #e684ae);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: auto;
+}
+.game-cell.winning-cell {
+  background-color: #a5fecb;
+}
