@@ -10,7 +10,7 @@ const Cell = ({ value, onClick, className }) => {
   return (
     <div
       onClick={onClick}
-      className={`flex text-[100px] items-center justify-center font-bold shadow-xl transition-all cursor-pointer ${className} game-cell `}
+      className={`flex text-[100px] items-center justify-center font-bold shadow-lg shadow-indigo-500/50 transition-all cursor-pointer ${className} game-cell `}
     >
       {value}
     </div>

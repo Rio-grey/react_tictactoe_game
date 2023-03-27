@@ -18,6 +18,7 @@ export function calculateWinner(cells) {
   }
   return null;
 }
+
 export function calculateWinnerStyle(cells) {
   const lines = [
     [0, 1, 2],
@@ -33,7 +34,7 @@ export function calculateWinnerStyle(cells) {
   for (let index = 0; index < lines.length; index++) {
     const [a, b, c] = lines[index];
     if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
-      return cells[a];
+      return lines[index];
     }
   }
   return null;
