@@ -8,6 +8,7 @@ const Game = () => {
   const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const [stepNumber, setStepNumber] = useState(0);
+  const [timer, setTimer] = useState(3);
 
   const winner = calculateWinner(board);
 
@@ -46,6 +47,14 @@ const Game = () => {
     //     setXIsNext(true);
     //   }
     // }, 1000);
+  };
+
+  const handleAutoPlay = () => {
+    const emtyCells = board
+      .map((cell, index) => (cell ? null : index))
+      .filter((item) => item !== null);
+
+    const position = emtyCells[Math.floor(Math.random() * emtyCells.length)];
   };
 
   const handleResetGame = () => {

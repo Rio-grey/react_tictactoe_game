@@ -8,7 +8,7 @@ const Board = (props) => {
     <div className="w-[500px] h-[500px] gap-[25px] grid grid-cols-3 grid-rows-3">
       {props.cells.map((item, index) => {
         const winnerStyle =
-          winner && winner.includes(index) ? "animate-bounce" : "";
+          winner && winner.includes(index) ? "animate-pulse" : "";
         const cellStyle = item === "X" ? "is_x" : item === "O" ? "is_o" : "";
         return (
           <Cell
